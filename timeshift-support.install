@@ -3,7 +3,7 @@
 post_install() {
     # Change grub snapshot submenu name
     sed -i /etc/default/grub-btrfs/config \
-        -e 's,.*GRUB_BTRFS_SUBMENUNAME=.*,GRUB_BTRFS_SUBMENUNAME=\"Garuda Linux snapshots\",'
+        -e 's,.*GRUB_BTRFS_SUBMENUNAME=.*,GRUB_BTRFS_SUBMENUNAME=\"XeroLinux Snapshots\",'
     
     # Set timeshift to btrfs mode
     sed -i 's|"btrfs_mode" : "false",|"btrfs_mode" : "true",|g' /etc/timeshift/default.json
